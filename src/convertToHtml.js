@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
-const marpFolder = 'pitch_decks';
+const marpFolder = 'updated_mds';
 const htmlFolder = 'html_pitch_decks';
 
 fs.mkdirSync(htmlFolder, { recursive: true });

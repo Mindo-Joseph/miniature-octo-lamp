@@ -1,29 +1,31 @@
 const fs = require('fs');
 const path = require('path');
 
-const inputFolder = 'original_mds';
+const inputFolder = 'pitch_decks';
 const outputFolder = 'updated_mds';
 
 fs.mkdirSync(outputFolder, {recursive: true});
 
-fs.readdirSync(inputFolder).forEach((file) => {
-    if (path.extname(file) === '.md') {
-        const inputPath = path.join(inputFolder, file);
-        const outputPath = path.join(outputFolder, file);
+const mdFiles = fs.readdirSync(inputFolder).filter((file) => path.extname(file) === '.md');
 
-        const originalContent = fs.readFileSync(inputPath, 'utf-8');
-        const updatedContent = splitContentIntoSlides(originalContent);
+mdFiles.forEach((file) => {
+    const inputPath = path.join(inputFolder, file);
+    const outputPath = path.join(outputFolder, file);
 
-        fs.writeFileSync(outputPath, updatedContent);
-    }
+    const originalContent = fs.readFileSync(inputPath, 'utf-8');
+    const updatedContent = splitContentIntoSlides(originalContent);
+
+    fs.writeFileSync(outputPath, updatedContent);
 });
 
 function splitContentIntoSlides(content) {
     const lines = content.split('\n');
     let updatedContent = '';
 
-    lines.forEach((line) => {
-        if (line.startsWith('#') || line.startsWith('---')) {
+    lines.forEach((line, index) => {
+        if (index === 0 && (line.startsWith('###') || line.startsWith('##'))) {
+            updatedContent += line + '\n';
+        } else if (line.startsWith('---')) {
             updatedContent += line + '\n';
         } else if (line.startsWith('###') || line.startsWith('##')) {
             updatedContent += '---\n' + line + '\n';
