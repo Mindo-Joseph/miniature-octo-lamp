@@ -1,0 +1,6 @@
+{
+    "version": 2,
+    "routes": [
+        { "src": "/(\\d+)", "dest": "/html_pitchdecks/pitchdeck_$1.html" }
+    ]
+}
