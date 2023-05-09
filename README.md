@@ -22,15 +22,13 @@ This project allows you to create pitch decks for a list of ideas stored in an E
 
 To view the generated pitch decks, deploy the project to Vercel or serve the HTML files using a local web server. Instructions for both are provided below.
 
-### Deploy to Vercel
+### Deploy to Render
 
-1. Install Vercel CLI globally: `npm install -g vercel`
-2. Log in to your Vercel account:
-3. Deploy the project: `vercel deploy`
+Follow the [tutorial](https://www.freecodecamp.org/news/how-to-deploy-nodejs-application-with-render/) to deploy the project to Render.
 
-After completing the setup, Vercel will provide you with a unique URL.
+After completing the setup, Render will provide you with a unique URL.
 
-Visit the URL provided to access your pitch decks. To view a specific pitch deck, append the slide index to the URL, e.g., `https://your-url.vercel.app/1` to access pitch deck 1.
+Visit the URL provided to access your pitch decks. To view a specific pitch deck, append the slide index to the URL, e.g., `https://your-url.render.app/1` to access pitch deck 1.
 
 ### Run a Local Web Server
 
