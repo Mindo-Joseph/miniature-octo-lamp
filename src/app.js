@@ -8,8 +8,8 @@ const {Configuration, OpenAIApi} = require("openai");
 const configuration = new Configuration({apiKey: process.env.OPENAI_API_KEY});
 const openai = new OpenAIApi(configuration);
 
-const inputFile = 'ideas.xlsx';
-const outputFolder = 'pitch_decks';
+const inputFile = 'TestIdea.xlsx';
+const outputFolder = 'cohort_3_decks';
 
 async function createMarpPitchDecks(inputFile, outputFolder) {
     const workbook = new ExcelJS.Workbook();
@@ -18,7 +18,7 @@ async function createMarpPitchDecks(inputFile, outputFolder) {
 
     fs.mkdirSync(outputFolder, {recursive: true});
 
-    for (let rowIndex = 168; rowIndex <= 195; rowIndex++) {
+    for (let rowIndex = 1; rowIndex <= 2; rowIndex++) {
         const idea = worksheet.getCell(rowIndex, 1).value;
 
         const pitchDeckContent = await generateMarpPitchDeckContent(idea);
@@ -28,23 +28,22 @@ async function createMarpPitchDecks(inputFile, outputFolder) {
 }
 
 async function generateMarpPitchDeckContent(idea) {
-    const prompt = `Create a pitch deck in Marp markdown format for the idea "${idea}".`;
+    const prompt = `You are an expert entrepreneur and investor, your role is to come up with a pitch-deck. I will give you an idea and you need to create an investor ready pitchdeck. The pitchdeck will be in marp format be sure to include all the relevant sections, the idea is: "${idea}".`;
 
     const gpt3Response = await openai.createCompletion({
-model : "text-davinci-003",
-
+        model : "text-davinci-003",
         prompt: prompt,
-        max_tokens: 500,
+        max_tokens: 900,
         n: 1,
         stop: null,
-        temperature: 0.7
+        temperature: 1
     });
 
     const content = gpt3Response.data.choices[0].text.trim();
 
     const marpTemplate = `---
 marp: true
-theme: default
+theme: uncover
 paginate: true
 ---
 ${content}

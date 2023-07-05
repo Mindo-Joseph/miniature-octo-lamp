@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
-const marpFolder = 'updated_mds';
+const marpFolder = 'updated_cohort_3_decks';
 const htmlFolder = 'html_pitch_decks';
 
 fs.mkdirSync(htmlFolder, { recursive: true });
@@ -11,7 +11,7 @@ fs.readdirSync(marpFolder).forEach(file => {
         const marpFile = path.join(marpFolder, file);
         const htmlFile = path.join(htmlFolder, path.basename(file, '.md') + '.html');
 
-        const command = `npx @marp-team/marp-cli ${marpFile} --html --allow-local-files --output ${htmlFile}`;
+        const command = `npx @marp-team/marp-cli ${marpFile} --html --allow-local-files --output ${htmlFile} --theme ${'./assets/gradient.css'}`;
         execSync(command);
 
     }

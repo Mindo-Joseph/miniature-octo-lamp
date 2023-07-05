@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const inputFolder = 'pitch_decks';
-const outputFolder = 'updated_mds';
+const inputFolder = 'cohort_3_decks';
+const outputFolder = 'updated_cohort_3_decks';
 
 fs.mkdirSync(outputFolder, {recursive: true});
 
