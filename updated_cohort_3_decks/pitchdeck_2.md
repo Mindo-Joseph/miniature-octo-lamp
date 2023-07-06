@@ -4,46 +4,47 @@ theme: uncover
 paginate: true
 ---
 ---
-## Pitch Deck
+## Titles 
+Clinic Locator: Finding Clinics in Your Community 
 
 ---
-### Problem
-The problem we are trying to address is the inability for organizations to properly store and manage information on their IT network. Data can become scattered, siloed, or lost as organizations continue to expand. This can result in loss of productivity or reduced security of data. 
+## Problem 
+1. Patients often find it difficult to find nearby health clinics that best meet their needs. 
+2. They may struggle to locate and/or understand available health care services within their local community. 
 
 ---
-### Solution
-Our solution is a comprehensive IT network management system. It will allow organizations to store, manage, and access data in a secure and consistent manner, reducing wasted time and ensuring the data is safe. With our system, organizations can easily access data, make changes, and stay organized.
+## Solution 
+Clinic Locator is an app to help people easily locate the nearest health clinic in their location, providing them with the information they need to make an educated decision regarding their health needs.
 
 ---
-### Benefits
-- Easy to use, intuitive user interface. 
-- Real time monitoring of the IT network, results in better visibility and control. 
-- Increased security of sensitive data. 
-- Streamline access to data across multiple departments
-- Automates mundane tasks to save time and resources
-- Improves team and organizational productivity 
+## Product Definition 
+Clinic Locator is an app and a website which comes with a comprehensive patient-friendly search engine to connect people with health clinics in their area. The app and website will have detailed information about all the health clinics in the area and enable them to locate the clinic as per their requirements.
 
 ---
-### Target Market
-The primary target market for our IT network management system is mid-sized businesses with a need to centralize and organize their data. Our system is designed for organizations ranging from 100 to 500 employees, who rely heavily on data and need to ensure it is secure and easily accessible. 
+## Target Audience 
+The Primary target audience for this product will be anyone who needs to find health care clinics in their local area, including patients, caregivers, medical students, and health care professionals.
 
 ---
-### Competition
-There are a few competitors in the IT network management space, however, we feel our system will stand out due to its comprehensive functionality, easy to use interface, and customization options. Other competitors may offer similar features, however, none provide a comprehensive solution that covers all IT network related tasks. 
+## Market Size 
+The target market for this idea is vast, and includes the entire United States and internationally. With more than 5500 health clinics in the US alone, there is a large potential for this product in the long run.
 
 ---
-### Execution Plan
-Our execution plan will focus on the following key areas:
-- Developing the software: Our team will utilize the best practices for creating a secure and easy to use software that is capable of meeting the needs of our target customer 
-- Promotion and marketing: We will utilize a variety of channels, including social media, targeted advertising, and content marketing, to spread awareness about our product 
-- Customer support: We will provide exceptional customer support to ensure customers are getting the most out of our product 
-- Continual improvement and development: As demand for our product grows, we will continue to develop and refine our product to ensure it remains competitive
+## Potential Competitive Advantage 
+Clinic Locator appeals to a large target market with its comprehensive search engine and detailed information about all the health clinics in the area. Additionally, Clinic Locator is easy to use and will provide more relevant information than its competitors which allows users to make an informed and educated decision regarding their health needs. 
 
 ---
-### Business Model
-Our proposed business model is based on a subscription model. We will charge customers a monthly fee, and the amount will depend on the number of users. We will also seek strategic partnerships with other organizations and vendors to increase our reach and develop new services.
+## Roadmap 
+The roadmap will involve the development of both a website and an app which includes the search engine with detailed information about all the health clinics in the area. By working in partnerships with local health  clinics, Clinic Locator can ensure that all of the information is up to date and accurate. Additionally, while developing the product, priority will be given to user-friendliness, providing users with an easy to understand and intuitive interface. 
 
 ---
-### Team
-We are a team of experienced professionals, with diverse skills and backgrounds, and a proven track record of success. Our team includes software developers, engineers, designers, marketers, accountants, and customer support specialists.
+## Business Model 
+The Clinic Locator app will be free for users however, the business model for the website will be to generate revenue by selling advertisement space to healthcare products and service providers. In addition, Clinic Locator will offer subscription model to provide premium services such loyalty programs, special discounts and other features
+
+---
+## Go To Market Strategy 
+The Clinic Locator team will use a multi-channel approach for its go-to-market strategy. This will involve targeting a variety of channels including digital media, brick and mortar locations, healthcare focused websites, and other resources dedicated to helping people locate medical professionals and health services. 
+
+---
+## The Ask 
+Clinic Locator is seeking $500k in seed investment to help launch the product and acquire partnerships with local health clinics. The investment will be used to further develop the website and app, fund marketing efforts, and provide resources to ensure the continued success of the product.
   
